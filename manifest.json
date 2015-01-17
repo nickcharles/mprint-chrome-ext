@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "helf MHacks, helf mPrint",
+  "version": "1.0",
+  "description": "Print a page using mPrint",
+
+  "browser_action": {
+    "default_icon": "print2.png",
+    "default_popup": "popup.html",
+    "default_title": "print using mPrint"
+  },
+
+  "author": "Carisa Covins",
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "css": ["mPrint.css"],
+      "js": ["mPrint.js"]
+    }
+  ],
+
+
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/",
+    "storage"
+  ]
+}
