@@ -5,59 +5,48 @@
  value "popup.html".
  -->
 <html>
-  <head>
-    <title>Hackathon2 Popup</title>
-    <link rel="stylesheet" href="mPrint.css">
-    <script type="text/javascript" src="mPrint.js"></script>
-  </head>
-    <body>
-      <form id="printPref" autocomplete="on" style="background-color:#000080;color:#FBEC5D">
+    <head>
+        <title>Hackathon2 Popup</title>
+        <link rel="stylesheet" href="mPrint.css">
+    </head>
+        <body>
+            <form id="printPref" autocomplete="on" style="background-color:#000080;color:#FBEC5D">
 
-          <p><strong><label for="title">Location of Printer</label></strong><br />
-          <select name = "printers">
-            <option value = "dude">The Dude</option>
-            <option value = "ugli">It's Ugli</option>
-          </select>
-          <p><p>
+                <p><strong><label for="title">Location of Printer</label></strong><br/>
+                <select name = "printers">
+                    <option value = "dude">The Dude</option>
+                    <option value = "ugli">It's Ugli</option>
+                </select>
+                <p><p>
 
-          <p><strong><label for="numCop">Number of Copies</label></strong><br />
-          <input type="text" id="numCop" name="numCop" size="10" value="" /></p>
+                <p><strong><label for="numCop">Number of Copies</label></strong><br />
+                <input type="text" id="numCop" name="numCop" size="10" value="" /></p>
 
-          <p><strong><label for="sides">Dusex Options</label></strong><br />
-          <input type="radio" name="sex" value="Single" checked>Single-sided Sex<br>
-          <input type="radio" name="sex" value="double" >Double-sided Sex, long edge<br>
-          <input type="radio" name="sex" value="double" >Double-sided Sex, short edge<br>
+                <p><strong><label for="sides">Dusex Options</label></strong><br />
+                <input type="radio" name="sex" value="Single" checked>Single-sided Sex<br>
+                <input type="radio" name="sex" value="double" >Double-sided Sex, long edge<br>
+                <input type="radio" name="sex" value="double" >Double-sided Sex, short edge<br>
 
-          <p><strong><label for="pages">Pages per Sheet</label></strong><br />
-          <select name = "pages">
-            <option value = "one">1</option>
-            <option value = "two">2</option>
-            <option value = "four">4</option>
-            <option value = "six">6</option>
-            <option value = "nine">9</option>
-            <option value = "sexteen">16</option>
-          </select>
-          <p><p>
+                <p><strong><label for="pages">Pages per Sheet</label></strong><br />
+                <select name = "pages">
+                    <option value = "one">1</option>
+                    <option value = "two">2</option>
+                    <option value = "four">4</option>
+                    <option value = "six">6</option>
+                    <option value = "nine">9</option>
+                    <option value = "sexteen">16</option>
+                </select>
+                <p><p>
 
-          <p><strong><label for="range">Page Range</label></strong><br />
-          <input type="text" id="range" name="range" size="10" value="" /></p>
-          <p>
-          <div><input id="sendToP" type="submit" value="Send to Printer"></div>
-          </p>
+                <p><strong><label for="range">Page Range</label></strong><br />
+                <input type="text" id="range" name="range" size="10" value="" /></p>
+                <p>
+                <div><input id="sendToP" type="submit" value="Send to Printer"></div>
+                </p>
 
-      </form>
+            </form>
 
-
-    </body>
-
-
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-     -->
-
-
-
+        <script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="mPrint.js"></script>
+        </body>
 </html>
